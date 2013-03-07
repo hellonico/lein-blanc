@@ -1,26 +1,18 @@
-# lein-noir
+# lein-blanc
 
-A [leiningen](https://github.com/technomancy/leiningen) plugin to help create and manage noir projects. It only has a lein-newnew template for creating noir projects at the moment, but it'll eventually have tasks for managing and deploying noir websites.
+A [leiningen](https://github.com/technomancy/leiningen) plugin to generate noir projects. 
 
 ## Usage
 
 For lein 2 simply do:
 
 ```
-lein new noir my-project-name
-```
-
-For lein 1.*:
-
-lein-noir includes a template for lein-newnew. To use it, you'll need to install [lein-newnew](https://github.com/Raynes/lein-newnew)
-
-```bash
-lein plugin install noir/lein-template 1.3.0
-lein new noir my-website
+lein new blanc my-project-name
 ```
 
 ## License
 
-Copyright (C) 2011 Chris Granger
+Copyright (C) 2013 Nicolas Modrzyk,
+based on Chris Granger's work
 
 Distributed under the Eclipse Public License, the same as Clojure.
