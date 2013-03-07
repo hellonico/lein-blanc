@@ -1,9 +1,9 @@
-(ns leiningen.new.noir
+(ns leiningen.new.blanc
   (:use leiningen.new.templates))
 
-(def render (renderer "noir"))
+(def render (renderer "blanc"))
 
-(defn noir
+(defn blanc
   "A skeleton Noir project."
   [name]
   (let [data {:name name
