@@ -1,3 +1,3 @@
-(defproject noir/lein-template "1.3.0"
+(defproject noir-ring/lein-template "1.0.0"
   :description "A lein-newnew template for generating new noir projects."
-  :url "https://github.com/ibdknox/lein-noir")
+  :url "https://github.com/hellonico/lein-noir")
