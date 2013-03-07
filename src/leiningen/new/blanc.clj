@@ -19,6 +19,7 @@
              ["src/{{sanitized}}/views/common.clj" (render "common.clj" data)]
              ["resources/public/css/reset.css" (render "reset.css" data)]
              "resources/public/js"
+             "resources/public/app"
              "resources/public/img"
              "src/{{sanitized}}/models"
              "src/{{sanitized}}/html"
@@ -29,4 +30,7 @@
              ["resources/public/css/bootstrap-responsive.min.css" (render "bootstrap/css/bootstrap-responsive.min.css")]
              ["resources/public/css/bootstrap.min.css" (render "bootstrap/css/bootstrap.min.css")]
              ["src/{{sanitized}}/html/bootstrap.html" (render "bootstrap.html")]
+             ["src/{{sanitized}}/html/angular.html" (render "angular.html")]
+             ["resources/public/app/todo.css" (render "app/todo.css")]
+             ["resources/public/app/todo.js" (render "app/todo.js")]
              )))
