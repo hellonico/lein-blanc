@@ -10,6 +10,7 @@
               :sanitized (sanitize name)}]
     (println "Generating a lovely new Noir project named" (str name "..."))
     (->files data
+             ; bootstrap
              ["project.clj" (render "project.clj" data)]
              [".gitignore" (render "gitignore" data)]
              ["README.md" (render "README.md" data)]
@@ -20,5 +21,12 @@
              "resources/public/js"
              "resources/public/img"
              "src/{{sanitized}}/models"
-             "test/{{sanitized}}")))
-
+             "src/{{sanitized}}/html"
+             "test/{{sanitized}}"
+             ["resources/public/js/bootstrap.min.js" (render "bootstrap/js/bootstrap.min.js")]
+             ["resources/public/img/glyphicons-halflings.png" (render "bootstrap/img/glyphicons-halflings.png")]
+             ["resources/public/img/glyphicons-halflings-white.png" (render "bootstrap/img/glyphicons-halflings-white.png")]
+             ["resources/public/css/bootstrap-responsive.min.css" (render "bootstrap/css/bootstrap-responsive.min.css")]
+             ["resources/public/css/bootstrap.min.css" (render "bootstrap/css/bootstrap.min.css")]
+             ["src/{{sanitized}}/html/bootstrap.html" (render "bootstrap.html")]
+             )))
