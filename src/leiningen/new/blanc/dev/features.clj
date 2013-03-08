@@ -27,11 +27,21 @@
 
 ;;; Features list
 
+;; H2
 (defmethod add-feature :+h2 [_]
   [["src/log4j.xml" (render "dbs/log4j.xml")]
    ["src/{{sanitized}}/models/db.clj" (render "dbs/db.clj")]
    ["src/{{sanitized}}/models/schema.clj" (render "dbs/h2_schema.clj")]])
-
 (defmethod post-process :+h2 [_ project-file]
   (add-dependencies project-file
                          ['com.h2database/h2 "1.3.170"]))
+
+;; BOOTSTRAP
+(defmethod add-feature :+bootstrap [_]
+ ["resources/public/js/bootstrap.min.js" (render "bootstrap/js/bootstrap.min.js")]
+ ["resources/public/img/glyphicons-halflings.png" (render "bootstrap/img/glyphicons-halflings.png")]
+ ["resources/public/img/glyphicons-halflings-white.png" (render "bootstrap/img/glyphicons-halflings-white.png")]
+ ["resources/public/css/bootstrap-responsive.min.css" (render "bootstrap/css/bootstrap-responsive.min.css")]
+ ["resources/public/css/bootstrap.min.css" (render "bootstrap/css/bootstrap.min.css")]
+ ["src/{{sanitized}}/html/bootstrap.html" (render "bootstrap.html")])
+(defmethod post-process :+h2 [_ _])
