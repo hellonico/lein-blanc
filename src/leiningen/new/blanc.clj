@@ -1,14 +1,17 @@
 (ns leiningen.new.blanc
+  (:require [leiningen.new.blanc.dev.features :as features])
   (:use leiningen.new.templates))
 
 (def render (renderer "blanc"))
 
 (defn blanc
   "A skeleton Noir project."
-  [name]
+  [name & parameters]
+  (features/init-features name parameters)
   (let [data {:name name
               :sanitized (sanitize name)}]
     (println "Generating a lovely new Noir project named" (str name "..."))
+    (features/include-features)
     (->files data
              ["project.clj" (render "project.clj" data)]
              [".gitignore" (render "gitignore" data)]
@@ -20,5 +23,6 @@
              "resources/public/js"
              "resources/public/img"
              "src/{{sanitized}}/models"
-             "test/{{sanitized}}")))
-
+             "test/{{sanitized}}")
+    (features/inject-dependencies)
+    ))
