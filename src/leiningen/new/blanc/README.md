@@ -1,15 +1,7 @@
 # {{name}}
 
-A website written in noir. 
+A website written in Clojure. 
 
-## Usage
-
-If you use cake, substitute 'lein' with 'cake' below. Everything should work fine.
-
-```bash
-lein deps
-lein run
-```
 
 ## License
 
