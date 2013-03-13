@@ -49,10 +49,10 @@
  ["resources/public/img/glyphicons-halflings-white.png" (render "bootstrap/img/glyphicons-halflings-white.png")]
  ["resources/public/css/bootstrap-responsive.min.css" (render "bootstrap/css/bootstrap-responsive.min.css")]
  ["resources/public/css/bootstrap.min.css" (render "bootstrap/css/bootstrap.min.css")]
- ["src/{{sanitized}}/html/bootstrap.html" (render "bootstrap.html")]])
+ ["src/{{sanitized}}/html/bootstrap.html" (render "bootstrap/bootstrap.html")]])
 ; (defmethod post-process :+bootstrap [_ _])
 
 (defmethod add-feature :+angular [_]
-  [["src/{{sanitized}}/html/angular.html" (render "angular.html")]
-  ["resources/public/app/todo.css" (render "app/todo.css")]
-  ["resources/public/app/todo.js" (render "app/todo.js")]])
+  [["src/{{sanitized}}/html/angular.html" (render "angular/angular/angular.html")]
+  ["resources/public/app/todo.css" (render "angular/todo.css")]
+  ["resources/public/app/todo.js" (render "angular/todo.js")]])
