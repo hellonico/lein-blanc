@@ -4,6 +4,11 @@
             :dependencies [[org.clojure/clojure "1.5.0-RC3"]
             			   [me.raynes/laser "1.1.1"]
             			   [ring-cors/ring-cors "0.1.0"]
-                           [noir "1.3.0-beta3"]]
-			:ring {:handler {{name}}.server/handler}
+                           [ring "1.1.8"]
+                           [lib-noir "0.4.9"]
+                 		   [compojure "1.1.5"]
+                           ]
+			:ring {:handler {{name}}.server/handler
+         	:init    {{name}}.server/init
+            :destroy {{name}}.server/destroy}
             :main {{name}}.server)

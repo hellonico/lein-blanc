@@ -1,8 +1,20 @@
 (ns {{name}}.server
-  (:require [noir.server :as server]))
+  (:use compojure.core)
+  (:require [noir.util.middleware :as middleware])
+  (:require [compojure.route :as route]))
 
-(server/load-views-ns '{{name}}.views)
+(defroutes app
+  (GET "/" [] "<h1>Hello World!</h1>")
+  (route/not-found "<h1>Page not found</h1>"))
 
-(def handler (server/gen-handler {:mode :dev
-                                  :ns '{{name}} }))
+(defn init[]
+  (println "{{name}} started successfully..."))
 
+(defn destroy[]
+  (println "shutting down..."))
+
+; (def handler (-> app
+;              middleware/app-handler
+;              ;;add your middlewares here
+;              ))
+(def handler app)
