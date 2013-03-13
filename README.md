@@ -19,7 +19,8 @@ Distributed under the Eclipse Public License, the same as Clojure.
 ## Things 
 ; add new routes dynamically
 ; integrate clabango https://github.com/danlarkin/clabango
-; some plugins to upload to cloudbees, 
+; some plugins to upload to cloudbees
+; clojure script
 
 ## Cloud
 ; http://mercredi.hellonico.cloudbees.net/
@@ -36,6 +37,7 @@ Distributed under the Eclipse Public License, the same as Clojure.
 
 ; Processing : http://processingjs.org/learning/
 ; D3 : http://d3js.org/
+; Three.js : http://mrdoob.github.com/three.js/examples/canvas_interactive_cubes_tween.html
 
 ; Gumby
 ; http://gumbyframework.com/demo
