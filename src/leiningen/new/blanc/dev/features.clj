@@ -29,7 +29,6 @@
 ;;; Features list
 ;;;
 
-
 ;; H2
 (defmethod add-feature :+h2 [_]
   [
@@ -57,3 +56,18 @@
   ["resources/public/app/todo.css" (render "angular/todo.css")]
   ["resources/public/app/todo.js" (render "angular/todo.js")]])
 (defmethod post-process :+angular [_ _])
+
+; Raphael
+; http://g.raphaeljs.com/
+
+; RGraph
+; http://www.rgraph.net/examples/index.html
+
+; Dygraphs
+; http://dygraphs.com/
+
+; Google Charts
+; https://developers.google.com/chart/interactive/docs/quick_start
+
+; jQueryMobile
+; http://jquerymobile.com/
