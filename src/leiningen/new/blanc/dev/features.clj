@@ -50,9 +50,10 @@
  ["resources/public/css/bootstrap-responsive.min.css" (render "bootstrap/css/bootstrap-responsive.min.css")]
  ["resources/public/css/bootstrap.min.css" (render "bootstrap/css/bootstrap.min.css")]
  ["src/{{sanitized}}/html/bootstrap.html" (render "bootstrap/bootstrap.html")]])
-; (defmethod post-process :+bootstrap [_ _])
+(defmethod post-process :+bootstrap [_ _])
 
 (defmethod add-feature :+angular [_]
-  [["src/{{sanitized}}/html/angular.html" (render "angular/angular/angular.html")]
+  [["src/{{sanitized}}/html/angular.html" (render "angular/angular.html")]
   ["resources/public/app/todo.css" (render "angular/todo.css")]
   ["resources/public/app/todo.js" (render "angular/todo.js")]])
+(defmethod post-process :+angular [_ _])
