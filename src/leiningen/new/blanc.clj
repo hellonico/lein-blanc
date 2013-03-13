@@ -14,6 +14,7 @@
     (apply (partial ->files data)
              (into 
              [
+             ["ring.sh" (render "ring.sh")]
              ; core
              ["project.clj" (render "project.clj" data)]
              [".gitignore" (render "gitignore" data)]

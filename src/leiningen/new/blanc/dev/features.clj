@@ -71,3 +71,6 @@
 
 ; jQueryMobile
 ; http://jquerymobile.com/
+
+; Async
+; [http-kit "2.0.0-RC4"]
