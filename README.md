@@ -22,6 +22,9 @@ Distributed under the Eclipse Public License, the same as Clojure.
 ; some plugins to upload to cloudbees
 ; clojure script
 
+; immutant ready
+; gen-class for proper jar file
+
 ## Cloud
 ; http://mercredi.hellonico.cloudbees.net/
 ; https://run.cloudbees.com/a/hellonico#

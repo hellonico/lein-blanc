@@ -1,4 +1,4 @@
-(ns leiningen.new.blanc.dev.dependency-injector
+(ns leiningen.new.dependency-injector
   (:use clojure.pprint)
   (:require [clojure.java.io :as io]))
 

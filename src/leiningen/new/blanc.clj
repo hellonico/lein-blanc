@@ -1,5 +1,5 @@
 (ns leiningen.new.blanc
-  (:require [leiningen.new.blanc.dev.features :as features])
+  (:require [leiningen.new.features :as features])
   (:use leiningen.new.templates))
 
 (def render (renderer "blanc"))
@@ -14,13 +14,12 @@
     (apply (partial ->files data)
              (into 
              [
-             ["ring.sh" (render "ring.sh")]
-             ; core
-             ["project.clj" (render "project.clj" data)]
-             [".gitignore" (render "gitignore" data)]
-             ["README.md" (render "README.md" data)]
-             ["src/{{sanitized}}/server.clj" (render "server.clj" data)]
-             ["resources/public/css/reset.css" (render "reset.css" data)]
+             ["ring.sh" (render "core/ring.sh")]
+             ["project.clj" (render "core/project.clj" data)]
+             [".gitignore" (render "core/gitignore" data)]
+             ["README.md" (render "core/README.md" data)]
+             ["src/{{sanitized}}/server.clj" (render "core/server.clj" data)]
+             ["resources/public/css/reset.css" (render "core/reset.css" data)]
              "resources/public/js"
              "resources/public/app"
              "resources/public/img"

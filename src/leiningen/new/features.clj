@@ -1,6 +1,6 @@
-(ns leiningen.new.blanc.dev.features
+(ns leiningen.new.features
   (:use leiningen.new.templates)
-	(:use leiningen.new.blanc.dev.dependency-injector))
+	(:use leiningen.new.dependency-injector))
 
 ;;; Generic 
 (def features (atom nil))
@@ -28,6 +28,9 @@
 ;;;
 ;;; Features list
 ;;;
+
+;; Core
+
 
 ;; H2
 (defmethod add-feature :+h2 [_]
