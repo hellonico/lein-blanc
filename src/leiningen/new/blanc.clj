@@ -29,4 +29,6 @@
              ]
              (features/include-features)
              ))
-    (features/inject-dependencies)))
+    (features/inject-dependencies)
+    (features/inject-routes)
+    ))
