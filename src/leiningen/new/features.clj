@@ -72,5 +72,6 @@
 (defmethod new-routes :+angular [_]
   [
     '(GET "/angular" [] (slurp (clojure.java.io/resource "html/angular.html")))
-  ]
-  )
+  ])
+
+;; GOOGLE MAPS
