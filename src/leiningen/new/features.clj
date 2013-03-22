@@ -95,9 +95,38 @@
     
   ]
 )
+
 (defmethod new-routes :+angular [_]
   [
     '(GET "/maps" [] (slurp (clojure.java.io/resource "html/maps.json.html")))
   ])
 
 ;; Gumby
+(defmethod add-feature :+gumby [_]
+  [
+  ; CSS
+  ["resources/public/css/gumby.css" (render "gumby/css/gumby.css")]
+  ["resources/public/css/style.css" (render "gumby/css/style.css")]
+
+  ; FONTS
+  ["resources/public/fonts/icons/entypo.eot" (render "gumby/fonts/icons/entypo.eot")]
+  ["resources/public/fonts/icons/entypo.ttf" (render "gumby/fonts/icons/entypo.ttf")]
+  ["resources/public/fonts/icons/entypo.woff" (render "gumby/fonts/icons/entypo.woff")]
+
+  ; IMG
+  ["resources/public/img/gumby_mainlogo.png" (render "gumby/img/gumby_mainlogo.png")]
+  ["resources/public/img/gumby_mainlogo@2x.png" (render "gumby/img/gumby_mainlogo@2x.png")]
+  
+  ; JS
+  ["resources/public/js/gumby.min.js" (render "gumby/js/libs/gumby.min.js")]
+  ["resources/public/js/jquery.min.js" (render "gumby/js/libs/jquery-1.8.3.min.js")]
+  ["resources/public/js/modernizr.min.js" (render "gumby/js/libs/modernizr-2.6.2.min.js")]
+
+  ["resources/public/js/main.js" (render "gumby/js/main.js")]
+  ["resources/public/js/plugins.js" (render "gumby/js/plugins.js")]
+
+  ; HTML
+  ["resources/public/html/ui.html" (render "gumby/ui.html")]  
+
+  ]
+)
