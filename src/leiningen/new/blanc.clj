@@ -22,7 +22,6 @@
              ["resources/public/css/reset.css" (render "core/reset.css" data)]
              ["src/{{sanitized}}/html/index.html" (render "clabango/template.html")]
              "resources/public/js"
-             "resources/public/app"
              "resources/public/img"
              "test/{{sanitized}}"
              "src/{{sanitized}}/html"

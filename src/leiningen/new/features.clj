@@ -65,7 +65,8 @@
      ])
 
 (defmethod add-feature :+angular [_]
-  [["src/html/angular.html" (render "angular/angular.html")]
+  [
+  ["src/html/angular.html" (render "angular/angular.html")]
   ["resources/public/app/todo.css" (render "angular/todo.css")]
   ["resources/public/app/todo.js" (render "angular/todo.js")]])
 ; (defmethod post-process :+angular [_ _])
