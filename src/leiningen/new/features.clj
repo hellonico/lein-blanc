@@ -94,3 +94,12 @@
     
   ]
 )
+(defmethod new-routes :+angular [_]
+  [
+    '(GET "/maps" [] (slurp (clojure.java.io/resource "html/maps.json.html")))
+  ])
+
+;; clabango
+
+
+;; Gumby

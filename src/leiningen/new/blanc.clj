@@ -20,6 +20,7 @@
              ["README.md" (render "core/README.md" data)]
              ["src/{{sanitized}}/server.clj" (render "core/server.clj" data)]
              ["resources/public/css/reset.css" (render "core/reset.css" data)]
+             ["src/{{sanitized}}/templates/index.html" (render "clabango/template.html")]
              "resources/public/js"
              "resources/public/app"
              "resources/public/img"
