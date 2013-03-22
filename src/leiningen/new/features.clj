@@ -130,3 +130,24 @@
 
   ]
 )
+
+; Raphael
+(defmethod add-feature :+raphael [_]
+  [
+  ; HTML
+  ["resources/public/html/piechart.html" (render "raphael/piechart.html")]  
+  ["resources/public/html/raphael.html" (render "raphael/raphael.html")]  
+
+  ; JS
+  ["resources/public/js/raphael.js" (render "raphael/raphael.js")]
+  ["resources/public/js/g.raphael-min.js" (render "raphael/g.raphael-min.js")]
+  ["resources/public/js/g.pie-min.js" (render "raphael/g.pie-min.js")]
+  ["resources/public/js/g.line-min.js" (render "raphael/g.line-min.js")]
+  ["resources/public/js/g.dot-min.js" (render "raphael/g.dot-min.js")]
+  ["resources/public/js/g.bar-min.js" (render "raphael/g.bar-min.js")]
+
+  ; CSS
+  ["resources/public/css/demo.css" (render "raphael/demo.css")]
+  ["resources/public/css/demo-print.css" (render "raphael/demo-print.css")]
+  ]
+)

@@ -10,6 +10,14 @@ For lein 2 simply do:
 lein new blanc my-project-name
 ```
 
+## Options
+
+* +angular
+* +boostrap 
+* +gumby [gumby](http://gumbyframework.com/demo)
+* +maps [maps](http://jquery-ui-map.googlecode.com/svn/trunk/demos/jquery-google-maps-basic-example.html)
+* +raphael [raphael](http://g.raphaeljs.com/)
+
 ## License
 
 Copyright (C) 2013 Nicolas Modrzyk, based on other people's work.
@@ -17,11 +25,8 @@ Copyright (C) 2013 Nicolas Modrzyk, based on other people's work.
 Distributed under the Eclipse Public License, the same as Clojure.
 
 ## Things 
-; add new routes dynamically
-; integrate clabango https://github.com/danlarkin/clabango
 ; some plugins to upload to cloudbees
 ; clojure script
-
 ; immutant ready
 ; gen-class for proper jar file
 
@@ -42,12 +47,6 @@ Distributed under the Eclipse Public License, the same as Clojure.
 ; D3 : http://d3js.org/
 ; Three.js : http://mrdoob.github.com/three.js/examples/canvas_interactive_cubes_tween.html
 
-; Gumby
-; http://gumbyframework.com/demo
-
-; Raphael
-; http://g.raphaeljs.com/
-
 ; RGraph
 ; http://www.rgraph.net/examples/index.html
 
@@ -59,9 +58,6 @@ Distributed under the Eclipse Public License, the same as Clojure.
 
 ; Google Charts
 ; https://developers.google.com/chart/interactive/docs/quick_start
-
-; Google Maps
-; http://jquery-ui-map.googlecode.com/svn/trunk/demos/jquery-google-maps-basic-example.html
 
 ; jQueryMobile
 ; http://jquerymobile.com/
