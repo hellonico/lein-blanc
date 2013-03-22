@@ -29,6 +29,7 @@ Distributed under the Eclipse Public License, the same as Clojure.
 ; clojure script
 ; immutant ready
 ; gen-class for proper jar file
+; RSS aggregator ? 笑
 
 ## Cloud
 ; http://mercredi.hellonico.cloudbees.net/
