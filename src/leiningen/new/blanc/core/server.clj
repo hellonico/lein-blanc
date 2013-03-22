@@ -11,7 +11,7 @@
   (GET "/json/:id" [id] (resp/json {:name id}))
   (GET "/headers" [] {:status 200 :headers {"Content-Type" "text/html"} :body "<h1>Hello with headers</h1>"})
   (POST "/post" {params :body} (prn "params:" (slurp params)))
-  (GET "/template/:id" [id] (render-file "{{name}}/templates/index.html" {:greeting (str "Hey!" id)}))
+  (GET "/template/:id" [id] (render-file "{{name}}/html/index.html" {:greeting (str "Hey!" id)}))
   (route/resources "/")
   (route/not-found "<h1>Page not found</h1>"))
 

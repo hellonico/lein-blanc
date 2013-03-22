@@ -99,7 +99,4 @@
     '(GET "/maps" [] (slurp (clojure.java.io/resource "html/maps.json.html")))
   ])
 
-;; clabango
-
-
 ;; Gumby
