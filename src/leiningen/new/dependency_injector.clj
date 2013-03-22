@@ -1,6 +1,10 @@
 (ns leiningen.new.dependency-injector
   (:use clojure.pprint)
+  (:import org.apache.commons.io.FileUtils)
   (:require [clojure.java.io :as io]))
+
+(defn copy-dir [source target]
+  (FileUtils/copyDirectory (io/as-file ".") (io/as-file "..")))
 
 (defn- read-file [filename]
   (with-open [r (java.io.PushbackReader.

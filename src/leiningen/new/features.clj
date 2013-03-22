@@ -75,3 +75,22 @@
   ])
 
 ;; GOOGLE MAPS
+(defmethod add-feature :+maps [_]
+  [
+  ["resources/public/js/bootstrap.min.js" (render "googlemaps/ui/min/jquery.ui.map.full.min.js")]
+  ["resources/public/html/maps.json.html" (render "googlemaps/maps.json.html")]
+  ["resources/public/css/960/min/960.css" (render "googlemaps/demos/css/960/min/960.css")]
+  ["resources/public/css/960/min/960_16_col.css" (render "googlemaps/demos/css/960/min/960_16_col.css")]
+  ["resources/public/css/normalize/min/normalize.css" (render "googlemaps/demos/css/normalize/min/normalize.css")]
+  ["resources/public/css/prettify/min/prettify.css" (render "googlemaps/demos/css/prettify/min/prettify.css")]
+  ["resources/public/css/style.css" (render "googlemaps/demos/css/style.css")]
+  ["resources/public/js/modernizr-2.0.6/modernizr.min.js" (render "googlemaps/demos/js/modernizr-2.0.6/modernizr.min.js")]
+  ["resources/public/js/jquery-1.7.1/jquery.min.js" (render "googlemaps/demos/js/jquery-1.7.1/jquery.min.js")]
+  ["resources/public/js/underscore-1.2.2/underscore.min.js" (render "googlemaps/demos/js/underscore-1.2.2/underscore.min.js")]
+  ["resources/public/js/backbone-0.5.3/backbone.min.js" (render "googlemaps/demos/js/backbone-0.5.3/backbone.min.js")]
+  ["resources/public/js/prettify/prettify.min.js" (render "googlemaps/demos/js/prettify/prettify.min.js")]
+  ["resources/public/js/demo.js" (render "googlemaps/demos/js/demo.js")]
+  ["resources/public/ui/jquery.ui.map.js" (render "googlemaps/ui/jquery.ui.map.js")]
+    
+  ]
+)
