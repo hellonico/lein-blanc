@@ -21,6 +21,7 @@
              ["src/{{sanitized}}/server.clj" (render "core/server.clj" data)]
              ["resources/public/css/reset.css" (render "core/reset.css" data)]
              ["src/{{sanitized}}/html/index.html" (render "clabango/template.html")]
+             ["src/{{sanitized}}/authserver.clj" (render "friends/authserver.clj" data)]
              "resources/public/js"
              "resources/public/img"
              "test/{{sanitized}}"

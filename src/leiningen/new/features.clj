@@ -2,7 +2,10 @@
   (:use leiningen.new.templates)
 	(:use leiningen.new.dependency-injector))
 
-;;; Generic 
+;;; 
+;;; Generic glue
+;;; 
+
 (def features (atom nil))
 (def projectname (atom nil))
 (def render (renderer "blanc"))
@@ -130,17 +133,6 @@
 
   ]
 )
-
-; friends
-(defmethod add-feature :+friends [_]
-  [
-  ["src/{{sanitized}}/authserver.clj" (render "friends/authserver.clj" data)]
-  ]
-)
-
-(defmethod post-process :+friends [_ project-file]
-  (add-dependencies project-file
-     '[com.cemerick/friend "0.1.4"]))
 
 ; Raphael
 (defmethod add-feature :+raphael [_]
