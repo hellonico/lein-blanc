@@ -130,6 +130,16 @@
 
   ]
 )
+; friends
+(defmethod add-feature :+friends [_]
+  [
+  ["src/{{sanitized}}/authserver.clj" (render "friends/authserver.clj" data)]
+  ]
+)
+
+(defmethod post-process :+friends [_ project-file]
+  (add-dependencies project-file
+     [com.cemerick/friend "0.1.4"]))
 
 ; Raphael
 (defmethod add-feature :+raphael [_]

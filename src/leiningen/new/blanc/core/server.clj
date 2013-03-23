@@ -23,5 +23,4 @@
 (defn destroy[]
   (println "shutting down..."))
 
-
 (def handler (middleware/app-handler all-routes))
