@@ -130,6 +130,7 @@
 
   ]
 )
+
 ; friends
 (defmethod add-feature :+friends [_]
   [
@@ -139,7 +140,7 @@
 
 (defmethod post-process :+friends [_ project-file]
   (add-dependencies project-file
-     [com.cemerick/friend "0.1.4"]))
+     '[com.cemerick/friend "0.1.4"]))
 
 ; Raphael
 (defmethod add-feature :+raphael [_]
