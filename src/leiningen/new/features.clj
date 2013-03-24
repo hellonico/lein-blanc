@@ -12,6 +12,7 @@
 
 (defn init-features [pname parameters]
   (reset! projectname pname)
+  ; +gumby +angular +maps +raphael +bootstrap
 	(reset! features parameters))
 
 (defmulti add-feature keyword)

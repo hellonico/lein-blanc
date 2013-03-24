@@ -43,7 +43,10 @@ Distributed under the Eclipse Public License, the same as Clojure.
 ; gen-class for proper jar file
 
 ## Cloud
-Heroku: https://toolbelt.heroku.com/
+
+* Heroku: 
+** https://toolbelt.heroku.com/
+** https://devcenter.heroku.com/articles/clojure-support
 
 ## Random
 

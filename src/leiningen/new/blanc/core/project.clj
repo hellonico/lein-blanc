@@ -1,6 +1,11 @@
 (defproject {{name}} "0.1.0-SNAPSHOT"
             :description "FIXME: write this!"
             :plugins [[lein-ring "0.8.3"]]
+            :min-lein-version "2.0.0"
+            :production {:misc "configuration" ; app-specific stuff
+             :offline true
+             :mirrors {#"central|clojars"
+                       "http://s3pository.herokuapp.com/clojure"}}
             :dependencies [
                         [org.clojure/clojure "1.5.1"]
                         [ring-cors/ring-cors "0.1.0"]
