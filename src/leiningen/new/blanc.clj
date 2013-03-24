@@ -16,11 +16,13 @@
              [
              ["ring.sh" (render "core/ring.sh")]
              ["project.clj" (render "core/project.clj" data)]
+             ["Procfile" (render "core/Procfile" data)]
              [".gitignore" (render "core/gitignore" data)]
              ["README.md" (render "core/README.md" data)]
              ["src/{{sanitized}}/server.clj" (render "core/server.clj" data)]
              ["resources/public/css/reset.css" (render "core/reset.css" data)]
-             ["src/{{sanitized}}/html/index.html" (render "clabango/template.html")]
+             ["src/{{sanitized}}/html/index.html" (render "clabango/index.html")]
+             ["src/{{sanitized}}/html/main.html" (render "clabango/main.html")]
              ["src/{{sanitized}}/authserver.clj" (render "friends/authserver.clj" data)]
              "resources/public/js"
              "resources/public/img"

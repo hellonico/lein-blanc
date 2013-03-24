@@ -24,3 +24,7 @@
   (println "shutting down..."))
 
 (def handler (middleware/app-handler all-routes))
+
+(defn -main []
+  (let [port (Integer/parseInt (System/getenv "PORT"))]
+    (run-jetty app {:port port})))

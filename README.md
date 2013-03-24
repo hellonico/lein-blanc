@@ -9,8 +9,20 @@ For lein 2 simply do:
 ```
 lein new blanc my-project-name
 ```
+## Out of the box
+
+* ring
+* libnoir
+* friends
 
 ## Options
+
+Specified options by using the +option flag.
+You can use multiple flags like
+
+    lein new blanc myproject +angular +raphael
+
+### Options list
 
 * +angular
 * +boostrap 
@@ -29,13 +41,17 @@ Distributed under the Eclipse Public License, the same as Clojure.
 ; clojure script
 ; immutant ready
 ; gen-class for proper jar file
-; RSS aggregator ? 笑
 
 ## Cloud
-; http://mercredi.hellonico.cloudbees.net/
-; https://run.cloudbees.com/a/hellonico#
+Heroku: https://toolbelt.heroku.com/
 
-## New Plugins
+## Random
+
+### Cloud
+* http://mercredi.hellonico.cloudbees.net/
+* https://run.cloudbees.com/a/hellonico#
+
+### Javascript
 
 ; Responsive: (From: http://webdesignledger.com/tools/8-useful-responsive-css-frameworks)
 ; http://responsive.gs/

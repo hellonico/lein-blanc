@@ -69,13 +69,13 @@
 
 (defmethod add-feature :+angular [_]
   [
-  ["src/html/angular.html" (render "angular/angular.html")]
+  ["resources/public/html/angular.html" (render "angular/angular.html")]
   ["resources/public/app/todo.css" (render "angular/todo.css")]
   ["resources/public/app/todo.js" (render "angular/todo.js")]])
 ; (defmethod post-process :+angular [_ _])
 (defmethod new-routes :+angular [_]
   [
-    '(GET "/angular" [] (slurp (clojure.java.io/resource "html/angular.html")))
+    '(GET "/angular" [] (resp/redirect "/html/angular.html"))
   ])
 
 ;; GOOGLE MAPS

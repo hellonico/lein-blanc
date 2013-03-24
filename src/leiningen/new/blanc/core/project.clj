@@ -1,4 +1,4 @@
-(defproject friendly "0.1.0-SNAPSHOT"
+(defproject {{name}} "0.1.0-SNAPSHOT"
             :description "FIXME: write this!"
             :plugins [[lein-ring "0.8.3"]]
             :dependencies [
@@ -11,10 +11,10 @@
                         [com.cemerick/friend "0.1.4"]
                         [friend-oauth2 "0.0.3"]
             ]
-            :ring {:handler friendly.server/handler
+            :ring {:handler {{name}}.server/handler
             ; comment the below for friends demo
-            ; :ring { :handler friendly.authserver/app
-            :init    friendly.server/init
-            :destroy friendly.server/destroy
+            ; :ring { :handler {{name}}.authserver/app
+            :init    {{name}}.server/init
+            :destroy {{name}}.server/destroy
             }
-            :main friendly.server)
+            :main {{name}}.server)
